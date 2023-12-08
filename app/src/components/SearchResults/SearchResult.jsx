@@ -40,5 +40,14 @@ const FoodCard = styled.div`
 width: 340px;
 height: 167px;
 border: 0.66px solid;
-
+border-image-source: radial-gradient(
+  80.69% 208.78% at 108.28% 112.58%,
+  #eabfff 0%,
+  rgba(135, 38, 183, 0) 100%
+),
+radial-gradient(
+  80.38% 222.5% at -13.75% -12.36%,
+  #98f9ff 0%,
+  rgba(255, 255, 255, 0) 100%
+);
 `;
