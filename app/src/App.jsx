@@ -36,6 +36,6 @@ align-items:center;
   border-radius:5px;
   height: 40px;
   font-size: 16px;
-  padding: 4px;
+  padding: 0 10px;
 }
 `;
