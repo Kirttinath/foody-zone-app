@@ -12,9 +12,13 @@ const App = () => {
           <input type="text" placeholder='Seacrh Food...' />
         </div>
       </TopContainer>
+
+      <FilterContainer>
+        </FilterContainer>  
+      
     </Container>
   );
-}
+};
 
 export default App;
 
