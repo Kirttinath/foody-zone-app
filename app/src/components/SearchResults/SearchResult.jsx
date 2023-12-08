@@ -34,7 +34,15 @@ height: calc(100vh - 210px);
 background-image: url("/bg1.png");
 background-size: cover;
 `;
-const FoodCards = styled.div``;
+const FoodCards = styled.div`
+display: flex;
+flex-wrap: wrap;
+row-gap: 32px;
+column-gap: 20px;
+justify-content: center;
+align-items: center;
+padding-top: 80px;
+`;
 
 const FoodCard = styled.div`
 width: 340px;
