@@ -15,6 +15,9 @@ const App = () => {
 
       <FilterContainer>
         <Button>All</Button>
+        <Button>BreakFast</Button>
+        <Button>Lunch</Button>
+        <Button>Dinner</Button>
         </FilterContainer>  
       
     </Container>
@@ -47,10 +50,17 @@ align-items:center;
 }
 `;
 
-const FilterContainer = styled.section``;
+const FilterContainer = styled.section`
+
+display: flex;
+justify-content: center;
+gap: 12px
+`;
 
 const Button = styled.button`
 border-radius: 5px;
 background: #FF4343;
 padding: 6px 12px;
+border: none;
+color: #FFFFFF;
 `;
