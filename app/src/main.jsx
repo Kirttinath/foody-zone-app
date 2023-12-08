@@ -16,7 +16,7 @@ body{
   min-height: 100vh;
   font-family:  'Inter', sans-serif;
   }
-`
+`;
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(

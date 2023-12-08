@@ -4,7 +4,7 @@ import React from "react";
 const App = () => {
 
   return (
-    <Maincontainer>
+    <Container>
       <TopContainer>
         <div className="logo">
           <img src="/logo.svg" alt="logo" />
@@ -13,14 +13,14 @@ const App = () => {
           <input type="text" placeholder='Seacrh Food...' />
         </div>
       </TopContainer>
-    </Maincontainer>
+    </Container>
   );
 }
 
 export default App;
 
-const Maincontainer = styled.div`
-
-background-color: #323334;
+const Container = styled.div`
+max-width: 1200px;
+margin: 0 auto;
 `;
 const TopContainer = styled.section``;
