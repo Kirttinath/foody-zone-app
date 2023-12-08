@@ -1,6 +1,16 @@
+import { useState } from "react";
 import styled from "styled-components";
 
+
+const BASE_URL = "http://localhost:9000";
+
+
+
 const App = () => {
+
+const [data, setData]= useState(null);
+
+
 
   return (
     <Container>
