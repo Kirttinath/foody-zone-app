@@ -28,4 +28,14 @@ display: flex;
 justify-content: space-between;
 padding:16px;
 align-items:center;
+
+.search{
+  background-color: transparent;
+  border: 1px solid red;
+  color:white;
+  border-radius:5px;
+  height: 40px;
+  font-size: 16px;
+  padding: 4px;
+}
 `;
