@@ -30,7 +30,7 @@ padding:16px;
 align-items:center;
 
 .search{
-  input{
+      input{
   background-color: transparent;
   border: 1px solid red;
   color:white;
