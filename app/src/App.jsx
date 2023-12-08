@@ -53,12 +53,6 @@ if(loading) return <div>Loading...</div>;
         <Button>Dinner</Button>
       </FilterContainer>
 
-      <FoodCardContainer>
-        <FoodCards>
-
-        </FoodCards>
-      </FoodCardContainer>
-
     </Container>
   );
 };
@@ -105,9 +99,3 @@ border: none;
 color: #FFFFFF;
 `;
 
-const FoodCardContainer = styled.section`
-height: calc(100vh - 210px);
-background-image: url("/bg1.png");
-background-size: cover;
-`;
-const FoodCards = styled.div``;
