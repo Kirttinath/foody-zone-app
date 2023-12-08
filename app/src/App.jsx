@@ -36,6 +36,7 @@ if(loading) return <div>Loading...</div>;
 
 
   return (
+    <>
     <Container>
       <TopContainer>
         <div className="logo">
@@ -52,14 +53,16 @@ if(loading) return <div>Loading...</div>;
         <Button>Lunch</Button>
         <Button>Dinner</Button>
       </FilterContainer>
-     <SearchResult data={data} />
+     
     </Container>
+    <SearchResult data={data} />
+    </>
   );
 };
 
 export default App;
 
-const Container = styled.div`
+export const Container = styled.div`
 max-width: 1200px;
 margin: 0 auto;
 `;
