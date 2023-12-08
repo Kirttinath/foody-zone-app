@@ -30,6 +30,7 @@ padding:16px;
 align-items:center;
 
 .search{
+  input{
   background-color: transparent;
   border: 1px solid red;
   color:white;
@@ -37,5 +38,6 @@ align-items:center;
   height: 40px;
   font-size: 16px;
   padding: 0 10px;
+  }
 }
 `;
