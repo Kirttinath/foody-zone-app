@@ -54,4 +54,5 @@ const FilterContainer = styled.section``;
 const Button = styled.button`
 border-radius: 5px;
 background: #FF4343;
+padding: 6px 12px;
 `;
