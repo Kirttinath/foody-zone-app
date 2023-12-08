@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 
@@ -10,23 +10,31 @@ const App = () => {
 
 const [data, setData]= useState(null);
 const [loading, setloading]  = useState(false);
+const [error, setError]  = useState(null);
 
-const fetchFoodData = async () => {
-  setloading(true);
-
-try {
-  const response = await fetch(BASE_URL);
-const json = await response.json();
-setloading(false);
-
-setData(json);
+useEffect(() => {
+  const fetchFoodData = async () => {
+    setloading(true);
   
-} catch (error) {
+  try {
+    const response = await fetch(BASE_URL);
+  const json = await response.json();
+  setloading(false);
   
-}
-};
+  setData(json);
+    
+  } catch (error) {
+    setError("Unable to fetch data..");
+  }
+  };
+  fetchFoodData();
+});
 
-fetchFoodData();
+
+if(error) return <div>{error}</div>;
+if(loading) return <div>Loading...</div>;
+
+
   return (
     <Container>
       <TopContainer>
