@@ -9,9 +9,24 @@ const BASE_URL = "http://localhost:9000";
 const App = () => {
 
 const [data, setData]= useState(null);
+const [loading, setloading]  = useState(false);
 
+const fetchFoodData = async () => {
+  setloading(true);
 
+try {
+  const response = await fetch(BASE_URL);
+const json = await response.json();
+setloading(false);
 
+setData(json);
+  
+} catch (error) {
+  
+}
+};
+
+fetchFoodData();
   return (
     <Container>
       <TopContainer>
