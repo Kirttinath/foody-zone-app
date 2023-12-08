@@ -51,4 +51,7 @@ align-items:center;
 
 const FilterContainer = styled.section``;
 
-const Button = styled.button``;
+const Button = styled.button`
+border-radius: 5px;
+background: #FF4343;
+`;
