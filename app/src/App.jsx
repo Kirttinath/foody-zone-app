@@ -109,7 +109,7 @@ max-width: 1200px;
 margin: 0 auto;
 `;
 const TopContainer = styled.section`
-min-height: 140px;
+height: 140px;
 display: flex;
 justify-content: space-between;
 padding:16px;
@@ -125,6 +125,11 @@ align-items:center;
   font-size: 16px;
   padding: 0 10px;
   }
+}
+
+@media (0 < width < 600px){
+  flex-direction: column;
+  height: 120px;
 }
 `;
 
