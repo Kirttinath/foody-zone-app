@@ -52,7 +52,7 @@ if(loading) return <div>Loading...</div>;
         <Button>Lunch</Button>
         <Button>Dinner</Button>
       </FilterContainer>
-     <SearchResult/>
+     <SearchResult data={data} />
     </Container>
   );
 };
