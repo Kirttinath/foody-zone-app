@@ -32,6 +32,7 @@ export default SearchResult;
 const FoodCardContainer = styled.section`
 height: calc(100vh - 210px);
 background-image: url("/bg1.png");
+border-radius: 20px;
 background-size: cover;
 `;
 const FoodCards = styled.div`
