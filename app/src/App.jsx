@@ -91,7 +91,7 @@ gap: 30px;
 padding-bottom: 40px;
 `;
 
-const Button = styled.button`
+export const Button = styled.button`
 border-radius: 5px;
 background: #FF4343;
 padding: 6px 12px;
