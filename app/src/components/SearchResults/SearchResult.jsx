@@ -57,4 +57,11 @@ background: url(.png),
       rgba(110, 191, 244, 0.0447917) 77.08%,
       rgba(70, 144, 213, 0) 100%
     );
+    background-blend-mode: overlay, normal;
+    backdrop-filter: blur(13.1842px);
+  
+    border-radius: 20px;
+  
+    display: flex;
+    padding: 8px;
 `;
