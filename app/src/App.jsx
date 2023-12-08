@@ -111,5 +111,9 @@ background: #FF4343;
 padding: 6px 12px;
 border: none;
 color: #FFFFFF;
+cursor: pointer;
+&:hover {
+  background-color: #f22f2f;
+}
 `;
 
