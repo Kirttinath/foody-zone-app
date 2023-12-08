@@ -14,6 +14,9 @@ const App = () => {
       </TopContainer>
 
       <FilterContainer>
+        <Button>
+
+        </Button>
         </FilterContainer>  
       
     </Container>
@@ -45,3 +48,7 @@ align-items:center;
   }
 }
 `;
+
+const FilterContainer = styled.section``;
+
+const Button = styled.button``;
