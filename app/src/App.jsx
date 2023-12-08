@@ -28,7 +28,7 @@ useEffect(() => {
   }
   };
   fetchFoodData();
-});
+}, []);
 
 
 if(error) return <div>{error}</div>;
