@@ -64,4 +64,14 @@ background: url(.png),
   
     display: flex;
     padding: 8px;
+    .food_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end;
+      h3 {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 500;
+      }
 `;
