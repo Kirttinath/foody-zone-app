@@ -92,7 +92,7 @@ if(loading) return <div>Loading...</div>;
       <FilterContainer>
         {
           filterBtns.map((value) => 
-          <Button key={value.name} onClick={()=> filterFood(value.type)}>{value.name}</Button>)
+          <Button isSelected={selectedbtn===value.type} key={value.name} onClick={()=> filterFood(value.type)}>{value.name}</Button>)
         }
       </FilterContainer>
      
@@ -124,6 +124,9 @@ align-items:center;
   height: 40px;
   font-size: 16px;
   padding: 0 10px;
+  &::placeholder{
+    color: white;
+  }
   }
 }
 
@@ -143,7 +146,8 @@ padding-bottom: 40px;
 
 export const Button = styled.button`
 border-radius: 5px;
-background: #FF4343;
+background: ${({isSelected})=>(isSelected ? "#f22222" : "#FF4343")};
+outline:1px solid ${({isSelected})=>(isSelected ? "white" : "#FF4343")};
 padding: 6px 12px;
 border: none;
 color: #FFFFFF;
