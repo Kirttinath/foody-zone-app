@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-
+import SearchResult from './components/SearchResults/SearchResult';
 
 const BASE_URL = "http://localhost:9000/";
 
@@ -52,7 +52,7 @@ if(loading) return <div>Loading...</div>;
         <Button>Lunch</Button>
         <Button>Dinner</Button>
       </FilterContainer>
-
+     <SearchResult/>
     </Container>
   );
 };
