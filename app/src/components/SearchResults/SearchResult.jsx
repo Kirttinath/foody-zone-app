@@ -74,4 +74,12 @@ background: url(.png),
         font-size: 16px;
         font-weight: 500;
       }
+      p {
+        margin-top: 4px;
+        font-size: 12px;
+      }
+      button {
+        font-size: 12px;
+      }
+    }
 `;
