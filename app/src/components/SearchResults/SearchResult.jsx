@@ -17,7 +17,7 @@ const SearchResult = ({ data}) => {
         <h3>{name}</h3>
         <p>{text}</p>
       </div>
-      <Button>₹{price}</Button>
+      <Button>₹{price.toFixed(2)}</Button>
     </div>
 
       </FoodCard>
@@ -36,4 +36,9 @@ background-size: cover;
 `;
 const FoodCards = styled.div``;
 
-const FoodCard = styled.div``;
+const FoodCard = styled.div`
+width: 340px;
+height: 167px;
+border: 0.66px solid;
+
+`;
