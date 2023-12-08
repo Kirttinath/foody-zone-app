@@ -22,4 +22,10 @@ const Container = styled.div`
 max-width: 1200px;
 margin: 0 auto;
 `;
-const TopContainer = styled.section``;
+const TopContainer = styled.section`
+min-height: 140px;
+display: flex;
+justify-content: space-between;
+padding:16px;
+align-items:center;
+`;
