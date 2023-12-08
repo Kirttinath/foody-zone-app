@@ -14,9 +14,7 @@ const App = () => {
       </TopContainer>
 
       <FilterContainer>
-        <Button>
-
-        </Button>
+        <Button>All</Button>
         </FilterContainer>  
       
     </Container>
